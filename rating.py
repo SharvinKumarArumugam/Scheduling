@@ -318,3 +318,77 @@ def main():
 if __name__ == "__main__":
     main()
 
+def add_custom_css():
+    st.markdown("""
+        <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styles */
+        .stApp header {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Sidebar Styles */
+        .stSidebar {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .stSidebar h1, .stSidebar h2, .stSidebar h3 {
+            color: #333;
+        }
+        .stSidebar .element-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Button Styles */
+        button[kind="primary"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button[kind="primary"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        /* Subheader Styles */
+        h2, h3 {
+            color: #4CAF50;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+add_custom_css()
+
+
