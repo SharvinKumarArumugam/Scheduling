@@ -343,6 +343,7 @@ def add_table_css():
             padding: 10px;
             border: 1px solid #d4a6f5; /* Soft purple cell borders */
             font-size: 14px;
+            color: black;
         }
         .stTable tr:nth-child(even) {
             background-color: #fce7f3; /* Light pink rows */
