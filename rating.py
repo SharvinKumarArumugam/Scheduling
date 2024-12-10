@@ -324,27 +324,27 @@ def add_table_css():
         /* Table Styles */
         .stTable {
             border: 2px solid #d4a6f5; /* Soft purple border */
-            border-radius: 10px;
-            overflow: hidden; /* For rounded corners */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* For clean appearance */
             margin-top: 20px;
         }
         .stTable table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; /* Removes gaps between cells */
         }
         .stTable th {
             background-color: #7b2cbf; /* Deep purple for header */
             color: white;
             padding: 10px;
-            text-align: center;
+            text-align: center; /* Center-align header text */
             font-size: 16px;
         }
         .stTable td {
             padding: 10px;
             border: 1px solid #d4a6f5; /* Soft purple cell borders */
-            text-align: center;
+            text-align: center; /* Center-align cell text */
             font-size: 14px;
-            color: black;
+            color: black; /* Black text */
         }
         .stTable tr:nth-child(even) {
             background-color: #fce7f3; /* Light pink rows */
@@ -354,11 +354,9 @@ def add_table_css():
         }
         .stTable tr:hover {
             background-color: #f3d1ff; /* Lavender hover effect */
-
+        }
         </style>
     """, unsafe_allow_html=True)
-
-add_table_css()
 
 
 
