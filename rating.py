@@ -1,6 +1,43 @@
 import streamlit as st
 import csv
 
+
+
+import streamlit as st
+
+def main():
+    st.title("Genetic Algorithm Parameter Input")
+
+    # Instructions
+    st.write("Use the sliders below to set the parameters for the Genetic Algorithm:")
+
+    # Crossover Rate Input
+    co_r = st.slider(
+        label="Crossover Rate (CO_R)",
+        min_value=0.0,
+        max_value=0.95,
+        value=0.8,
+        step=0.01,
+        help="Set the crossover rate. Default is 0.8."
+    )
+
+    # Mutation Rate Input
+    mut_r = st.slider(
+        label="Mutation Rate (MUT_R)",
+        min_value=0.01,
+        max_value=0.05,
+        value=0.2,
+        step=0.01,
+        help="Set the mutation rate. Default is 0.2."
+    )
+
+    # Display the selected values
+    st.write(f"Selected Crossover Rate (CO_R): {co_r}")
+    st.write(f"Selected Mutation Rate (MUT_R): {mut_r}")
+
+if __name__ == "__main__":
+    main()
+
 # Function to read the CSV file and convert it to the desired format
 def read_csv_to_dict(file_path):
     program_ratings = {}
@@ -36,8 +73,8 @@ ratings = program_ratings_dict
 
 GEN = 100
 POP = 50
-CO_R = 0.8
-MUT_R = 0.2
+# CO_R = 0.8
+# MUT_R = 0.2
 EL_S = 2
 
 all_programs = list(ratings.keys()) # all programs
