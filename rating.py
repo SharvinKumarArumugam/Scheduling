@@ -357,6 +357,6 @@ def add_table_css():
         }
         </style>
     """, unsafe_allow_html=True)
-
+add_table_css()
 
 
