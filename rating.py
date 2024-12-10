@@ -354,7 +354,15 @@ def add_table_css():
         .stTable tr:hover {
             background-color: #f3d1ff; /* Lavender hover effect */
 
-            /* Button Styles with Transition */
+        </style>
+    """, unsafe_allow_html=True)
+
+add_table_css()
+
+def add_button_css():
+    st.markdown("""
+        <style>
+        /* Button Styles with Transition */
         button[kind="primary"] {
             background-color: #7b2cbf; /* Deep purple */
             color: white;
@@ -370,10 +378,8 @@ def add_table_css():
             transform: scale(1.05); /* Slightly enlarges the button */
             box-shadow: 0px 4px 15px rgba(168, 85, 247, 0.5); /* Adds a subtle shadow */
         }
-        }
         </style>
     """, unsafe_allow_html=True)
 
-add_table_css()
-
+add_button_css()
 
