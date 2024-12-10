@@ -324,12 +324,12 @@ def add_custom_css():
         /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f7f3fc; /* Light purple background */
         }
 
         /* Header Styles */
         .stApp header {
-            background-color: #4CAF50;
+            background-color: #7b2cbf; /* Deep purple */
             padding: 10px;
             color: white;
             text-align: center;
@@ -337,28 +337,31 @@ def add_custom_css():
 
         /* Sidebar Styles */
         .stSidebar {
-            background-color: #f4f4f4;
+            background-color: #fce7f3; /* Light pink */
             padding: 10px;
+            border-radius: 10px;
         }
         .stSidebar h1, .stSidebar h2, .stSidebar h3 {
-            color: #333;
+            color: #5a189a; /* Dark purple */
         }
         .stSidebar .element-container {
-            border: 1px solid #ddd;
+            border: 1px solid #d0b3f5; /* Soft purple border */
             border-radius: 8px;
             padding: 10px;
             margin-bottom: 10px;
+            background-color: #fdf8ff; /* Subtle background for widgets */
         }
 
         /* Button Styles */
         button[kind="primary"] {
-            background-color: #4CAF50;
+            background-color: #7b2cbf; /* Deep purple */
             color: white;
             border: none;
             border-radius: 5px;
+            font-weight: bold;
         }
         button[kind="primary"]:hover {
-            background-color: #45a049;
+            background-color: #a855f7; /* Vibrant pink */
         }
 
         /* Table Styles */
@@ -368,23 +371,33 @@ def add_custom_css():
             margin-top: 20px;
         }
         table th, table td {
-            border: 1px solid #ddd;
+            border: 1px solid #d4a6f5; /* Light purple borders */
             padding: 8px;
         }
         table th {
-            background-color: #4CAF50;
+            background-color: #7b2cbf; /* Deep purple */
             color: white;
         }
         table tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #fce7f3; /* Light pink rows */
         }
         table tr:hover {
-            background-color: #ddd;
+            background-color: #f3d1ff; /* Light lavender hover */
         }
 
         /* Subheader Styles */
         h2, h3 {
-            color: #4CAF50;
+            color: #7b2cbf; /* Deep purple */
+        }
+
+        /* Input and Slider Styles */
+        .stSlider {
+            color: #7b2cbf; /* Purple slider */
+        }
+        input[type="text"], input[type="number"], select {
+            border: 2px solid #d0b3f5; /* Purple border */
+            border-radius: 5px;
+            padding: 5px;
         }
         </style>
     """, unsafe_allow_html=True)
