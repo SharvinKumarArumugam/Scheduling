@@ -124,11 +124,11 @@ def main():
 
         # Parameter input
         st.subheader("Set Genetic Algorithm Parameters")
-        GEN = st.number_input("Number of Generations", min_value=10, max_value=500, value=100, step=10)
-        POP = st.number_input("Population Size", min_value=10, max_value=200, value=50, step=10)
+        GEN = 100
+        POP = 50
         CO_R = st.slider("Crossover Rate (CO_R)", min_value=0.0, max_value=0.95, value=0.8, step=0.01)
         MUT_R = st.slider("Mutation Rate (MUT_R)", min_value=0.01, max_value=0.05, value=0.02, step=0.01)
-        EL_S = st.number_input("Elitism Size", min_value=1, max_value=10, value=2)
+        EL_S = 2
 
         # Generate schedule
         if st.button("Generate Optimal Schedule"):
