@@ -281,11 +281,11 @@ def main():
         all_time_slots = list(range(6, 24))  # Time slots from 6:00 to 23:00
 
         st.sidebar.header("Set Genetic Algorithm Parameters")
-        GEN = st.sidebar.number_input("Generations", min_value=10, max_value=500, value=100, step=10)
-        POP = st.sidebar.number_input("Population Size", min_value=10, max_value=200, value=50, step=10)
+        GEN = 100
+        POP = 50
         CO_R = st.sidebar.slider("Crossover Rate", min_value=0.0, max_value=1.0, value=0.8, step=0.01)
         MUT_R = st.sidebar.slider("Mutation Rate", min_value=0.0, max_value=0.1, value=0.02, step=0.01)
-        EL_S = st.sidebar.number_input("Elitism Size", min_value=1, max_value=10, value=2)
+        EL_S = 2
 
         # Generate schedule
         if st.button("Generate Optimal Schedule"):
