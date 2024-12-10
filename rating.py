@@ -318,4 +318,36 @@ def main():
 if __name__ == "__main__":
     main()
 
+def add_toc_css():
+    st.markdown("""
+        <style>
+        /* Table of Contents Container */
+        .stSidebar {
+            background-color: #f7f3fc; /* Light purple */
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #d4a6f5; /* Soft purple border */
+        }
+
+        /* Table of Contents Header */
+        .stSidebar h1, .stSidebar h2, .stSidebar h3 {
+            color: #7b2cbf; /* Deep purple */
+            font-weight: bold;
+        }
+
+        /* Links inside Table of Contents */
+        .stSidebar a {
+            color: #a855f7; /* Pink links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .stSidebar a:hover {
+            color: #7b2cbf; /* Deep purple hover */
+            text-decoration: underline;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+add_toc_css()
+
 
