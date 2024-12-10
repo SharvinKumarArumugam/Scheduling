@@ -336,12 +336,13 @@ def add_table_css():
             background-color: #7b2cbf; /* Deep purple for header */
             color: white;
             padding: 10px;
-            text-align: left;
+            text-align: center;
             font-size: 16px;
         }
         .stTable td {
             padding: 10px;
             border: 1px solid #d4a6f5; /* Soft purple cell borders */
+            text-align: center;
             font-size: 14px;
             color: black;
         }
@@ -359,27 +360,5 @@ def add_table_css():
 
 add_table_css()
 
-def add_button_css():
-    st.markdown("""
-        <style>
-        /* Button Styles with Transition */
-        button[kind="primary"] {
-            background-color: #7b2cbf; /* Deep purple */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            padding: 10px 20px;
-            transition: all 0.3s ease; /* Smooth transition effect */
-        }
-        button[kind="primary"]:hover {
-            background-color: #a855f7; /* Vibrant pink */
-            color: white;
-            transform: scale(1.05); /* Slightly enlarges the button */
-            box-shadow: 0px 4px 15px rgba(168, 85, 247, 0.5); /* Adds a subtle shadow */
-        }
-        </style>
-    """, unsafe_allow_html=True)
 
-add_button_css()
 
