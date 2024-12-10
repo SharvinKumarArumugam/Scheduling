@@ -318,36 +318,44 @@ def main():
 if __name__ == "__main__":
     main()
 
-def add_toc_css():
+def add_table_css():
     st.markdown("""
         <style>
-        /* Table of Contents Container */
-        .stSidebar {
-            background-color: #f7f3fc; /* Light purple */
-            padding: 10px;
-            border-radius: 10px;
+        /* Table Styles */
+        .stTable {
             border: 2px solid #d4a6f5; /* Soft purple border */
+            border-radius: 10px;
+            overflow: hidden; /* For rounded corners */
+            margin-top: 20px;
         }
-
-        /* Table of Contents Header */
-        .stSidebar h1, .stSidebar h2, .stSidebar h3 {
-            color: #7b2cbf; /* Deep purple */
-            font-weight: bold;
+        .stTable table {
+            width: 100%;
+            border-collapse: collapse;
         }
-
-        /* Links inside Table of Contents */
-        .stSidebar a {
-            color: #a855f7; /* Pink links */
-            text-decoration: none;
-            font-weight: bold;
+        .stTable th {
+            background-color: #7b2cbf; /* Deep purple for header */
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 16px;
         }
-        .stSidebar a:hover {
-            color: #7b2cbf; /* Deep purple hover */
-            text-decoration: underline;
+        .stTable td {
+            padding: 10px;
+            border: 1px solid #d4a6f5; /* Soft purple cell borders */
+            font-size: 14px;
+        }
+        .stTable tr:nth-child(even) {
+            background-color: #fce7f3; /* Light pink rows */
+        }
+        .stTable tr:nth-child(odd) {
+            background-color: #f7f3fc; /* Light purple rows */
+        }
+        .stTable tr:hover {
+            background-color: #f3d1ff; /* Lavender hover effect */
         }
         </style>
     """, unsafe_allow_html=True)
 
-add_toc_css()
+add_table_css()
 
 
