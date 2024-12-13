@@ -283,7 +283,7 @@ def main():
         st.sidebar.header("Set Genetic Algorithm Parameters")
         GEN = 100
         POP = 50
-        CO_R = st.sidebar.slider("Crossover Rate", min_value=0.0, max_value=1.0, value=0.8, step=0.01)
+        CO_R = st.sidebar.slider("Crossover Rate", min_value=0.0, max_value=0.95, value=0.8, step=0.01)
         MUT_R = st.sidebar.slider("Mutation Rate", min_value=0.1, max_value=0.05, value=0.02, step=0.01)
         EL_S = 2
 
